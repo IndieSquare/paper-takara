@@ -1,1 +1,139 @@
 /* You can add global styles to this file, and also import other style files */
+
+.title {
+ font-size: 20pt;
+    /* 20px */
+    font-weight: 500;
+}
+
+.subtitle {
+    padding-top: 9px;
+ font-size: 14pt;
+    font-weight: 400;
+}
+
+.instruc1 {
+color: #5c8ba7;
+font-family: Arial, Helvetica, sans-serif;
+ font-size: 11pt;
+}
+
+.instrucAdvanced {
+color: #585858;
+font-family: Arial, Helvetica, sans-serif;
+ font-size: 11pt;
+}
+.js .inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+   width: 110px;
+    font-size: 10pt;
+    /* 20px */
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+    font-family: Arial, Helvetica, sans-serif;
+    /* 10px 20px */
+}
+
+.no-js .inputfile + label {
+    display: none;
+}
+
+.inputfile:focus + label,
+.inputfile.has-focus + label {
+    outline: 1px dotted #000;
+    outline: -webkit-focus-ring-color auto 5px;
+}
+
+.inputfile + label * {
+    /* pointer-events: none; */
+    /* in case of FastClick lib use */
+}
+
+.inputfile + label svg {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    fill: currentColor;
+    margin-top: -0.25em;
+    /* 4px */
+    margin-right: 0.25em;
+    /* 4px */
+}
+
+
+/* style 1 */
+
+.inputfile-1 + label {
+    color: #f1e5e6;
+    background-color: #d3394c;
+}
+
+.inputfile-1:focus + label,
+.inputfile-1.has-focus + label,
+.inputfile-1 + label:hover {
+    background-color: #722040;
+}
+
+
+.alert{
+    color: #d3394c;
+     text-align:right; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    
+}
+
+
+.warning{
+    color: #d3394c;
+     text-align:left; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+}
+
+.spacer {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
+
+.instruc4 {
+   color: #5c8ba7;
+font-family: Arial, Helvetica, sans-serif;
+font-size: 12pt; 
+
+}
+
+.instrucSmall {
+    width: 90%; text-align:center; font-size: 15pt;  margin: 0 auto; margin-top: 30px;
+   
+    font-weight: 500;
+font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#left{ float:left; display: inline-block; white-space: nowrap; background-color: white;}
+#center{ float:left; margin-left:30px; display: inline-block; white-space: nowrap;}
+#right{ float:left;  display: inline-block; white-space: nowrap; }
+
+.outer {
+  display:flex;
+  justify-content: center;
+  padding: 3px;
+}
+.outer > div {
+  margin:2px;
+}

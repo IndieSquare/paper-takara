@@ -1,0 +1,63 @@
+ 
+ <div style="font-family: Arial, Helvetica, sans-serif;
+ font-size: 12pt; color:gray "> preview</div>
+ <div id="card" style="width: 700px; height:350px; box-sizing: border-box; margin-top:5px; position: relative;">
+ 
+     <div style="width: 476px; height:350px; left: 0%; top: 0; background-color:#5c8ba7;  position: relative;">
+       
+          
+             <img style="width: auto; height: 95%; left:10%; top:3%; position: absolute;" src="assets/images/takara_box.png">
+             <div style="width: 55%; height:55%; left:24%;  top:20%; clip-path: circle(40% at center);   position: absolute;">
+           
+              <img id="uploadImage" style="left:12%; width: auto; height:100%;  position: absolute;" [src]=wallet.imageData.image [width]="210" [height]="210">
+             </div>
+             <img style="width: auto; height: 95%;  left:10%; top:3%; position: absolute;" src="assets/images/takara_box_overlay.png">
+        
+
+       
+     </div>
+
+     <div style="width: 32%; height:100%;  right: 0%; top: 0; background-color:white;  position: absolute;">
+
+       <h1 class="instrucSmall" style="width: 100%; text-align:center; font-size: 11pt; margin-top: 8%">{{ wallet.tokenName }}</h1>
+   
+<div id="qrcode"  style=" display: flex;
+  justify-content: center;  background-color:white; margin-top: 5px;"></div>
+   
+
+       <h1 class="instrucSmall" style="width: 100%; text-align:center; font-size: 9pt;">{{dataService.giftCardHowToClaim}}</h1>
+        <h2 class="instrucSmall" style="margin-left: auto;
+  margin-right: auto; width: 90%; text-align:center;  font-size: 5.5pt;">{{dataService.giftCardHowToClaim1}}</h2>
+         <h2 class="instrucSmall" style="margin-left: auto;
+  margin-right: auto; width: 90%; text-align:center;  font-size: 5.5pt;">{{dataService.giftCardHowToClaim2}}</h2>
+<div id="images"  style=" display:inline-block;
+margin-left:auto;
+margin-right:auto; text-align:center;  bottom:0;">
+ <table class="image" align="center" >
+    <tr>
+      <td>
+        <img style="width: 50%; height:auto;margin-top: 15px;" src="assets/images/indiesquare_logo.png">
+      </td>
+     
+    </tr>
+    </table>
+      <h2 style="font-size: 7pt; color: grey; margin-top: 10px;">1n5xxxbitcoinaddressmm3e</h2>
+    
+  </div>
+
+
+     </div> 
+    
+     
+   </div>
+ <br>
+ <br>
+ <br>
+   <p class="instruc4">{{dataService.instruc4}}</p>
+    <p id="loading" style="font-family: Arial, Helvetica, sans-serif;font-size: 8pt; color: grey; float:right; margin-top:10px; width: 170px; height:50px; font-size: 16pt; margin-left: 30px; display:none;">{{dataService.loading}}</p>
+    
+    <button id="generate"  type="button" class="btn btn-success" style="float:right; width: 160px; height:50px; font-size: 16pt;" (click)="download()">Generate</button>
+ 
+    
+  <label class="alert" style="float:right; margin-top:20px; margin-right:20px;" >{{this.dataService.alertText}}</label>
+  

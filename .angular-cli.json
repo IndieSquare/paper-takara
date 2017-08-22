@@ -21,7 +21,7 @@
       "styles": [
         "styles.css"
       ],
-      "scripts": [],
+      "scripts": [ "../node_modules/jspdf/dist/jspdf.min.js","../node_modules/qr-js/qr.js","../node_modules/jszip/dist/jszip.min.js","../node_modules/file-saver/FileSaver.min.js"],
       "environmentSource": "environments/environment.ts",
       "environments": {
         "dev": "environments/environment.ts",
