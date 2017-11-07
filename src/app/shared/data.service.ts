@@ -9,6 +9,7 @@ export class DataService {
   imageSet:boolean;
   printNumber:number;
    customFee:number;
+   showModal = true;
 
 
 
@@ -36,7 +37,7 @@ title = "";
 
 
       giftCardHowToCharge= "";
-       giftCardChargeInstructions = "Each qr code below represents a giftcard\nTo charge use indiesquare wallet and scan each qrcode with the “systemlinkage” button\nYou can also use bitsplit.csv to batch charge via bitsplit.tokenly.com tool\nIf using bitsplit set a custom dust size in bitsplit to include a sweep fee e.g. 0.0001543"
+       giftCardChargeInstructions = "Each qr code below represents a giftcard\nTo charge use indiesquare wallet and scan each qrcode with the “systemlinkage” button\nYou can also use bitsplit.csv to batch charge via bitsplit.tokenly.com tool\nIf using bitsplit set a custom dust size in bitsplit to include a sweep fee e.g. 0.0001"
     
       
 
@@ -50,6 +51,10 @@ loading = "";
      error3= "";
     error4= "";
       errorFee= "";
+
+      disclaimer ="";
+      disclaimerTitle ="";
+        disclaimerAgree ="";
   
    constructor(){
     
@@ -107,8 +112,9 @@ loading = "";
       this. error3 = "please upload an image";
      this. error4 = "please enter a quantity between 1 and 1000";
        this. errorFee = "please enter a fee between 0.0001 btc and 0.01 btc";
-  
-
+       this.disclaimerTitle = "Terms and conditions";
+  this.disclaimer ="By using this tool to generate paper wallets I confirm that I am in full complience with any money transmitting and/or crypto currency regulation laws in my jurisdication. I also confirm that I am not a resident of Japan or the State of New York USA";
+this.disclaimerAgree ="I agree";
 
 }
 
@@ -149,6 +155,9 @@ setJapanese(){
      this. error4 = "please enter a quantity between 1 and 1000";
        this. errorFee = "please enter a fee between 0.0001 btc and 0.01 btc";
 
+        this.disclaimerTitle = "Terms and conditions";
+  this.disclaimer ="By using this tool to generate paper wallets I confirm that I am in full complience with any money transmitting and/or crypto currency regulation laws in my jurisdication. I also confirm that I am not a resident of Japan or the State of New York USA";
+this.disclaimerAgree ="I agree";
 
 }
     getWallet(){

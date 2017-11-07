@@ -10,12 +10,14 @@ import { DataService } from './shared/data.service';
 import { ImageCropperModule } from 'ng2-img-cropper';
 
 import 'hammerjs';
+import { ModalComponent } from './modal/modal.component';
 @NgModule({
   declarations: [
     AppComponent,
     TopbarComponent,
     GiftcardComponent,
     InputsComponent,
+    ModalComponent,
   ],
   imports: [
     BrowserModule,
